@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+*
+{
+margin: 0
+}
+.container
+{
+display: flex;
+width ; 25%;
+padding : 20px;
+border-style : none;
+border-color : white;
+margin-top : 100px;
+flex-direction: column;
+}
+body
+{
+background-image : url("https://media.hearstapps.com/loop/lede-sand-final-1657751192.mp4/poster.jpg");
+}
+h1
+{
+color: black;
+font-family: "Oswald", sans-serif;
+margin: 20px 0;
+x}
+.registartion-form
+{
+display: flex;
+align-items: center;
+width: 500px;
+color : black;
+font-size: 18px;
+padding: 20px;
+}
+.registartion-form input,
+.registartion-form select,
+.registartion-form textarea
+{
+border: none;
+padding: 5px;
+margin-top: 10px;
+font-family: sans-serif;
+background-color : black;
+color:white;
+}
+.registartion-form input:focus,
+.registartion-form textarea:focus
+{
+outline: none;
+box-shadow: 0 0 10px rgb(228, 228, 228), 0 0 10px rgb(224, 224, 224);
+}
+.registartion-form .submit
+{
+width: 100%;
+padding: 8px 0;
+font-size: 20px;
+font-weight: 600;
+color: white;
+background-color: black;
+border-radius: 5px;
+}
+p
+{
+color : black;
+}
+a
+{
+color : black;
+}

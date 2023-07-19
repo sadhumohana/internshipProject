@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title> login page </title>
+<script>
+var attempt = 5;
+function myfunction()
+{
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if(username === "mohana" && password === "sadhu")
+{
+alert("good");
+window.open("fanpage.html");
+return false;
+}
+else
+{
+attempt--;
+alert("you have left "+attempt+"attempt");
+if(attempt == 0)
+{
+document.getElementById("username").disabled = true;
+document.getElementById("password").disabled = true;
+document.getElementById("submit").disabled = true;
+return false;
+}
+}
+}
+</script>
+<style>
+body
+{
+text-align : center;
+background-image : url("https://w0.peakpx.com/wallpaper/172/454/HD-wallpaper-avengers-logo-movie-the-avengers-avengers-age-of-ultron.jpg");
+background-size : cover;
+}
+form
+{
+width :25%;
+padding : 20px;
+border-style : none;
+border-color : white;
+color : red;
+margin-top : 170px;
+}
+</style>
+</head>
+<body>
+<form>
+<h1><b> LOGIN </b></h1>
+<label for = "username"> USERNAME </label><br>
+<input type = "text" id = "username" name = "username"><br><br>
+<label for = "password"> PASSWORD </label><br>
+<input type = "password" id = "password" name = "password"><br><br>
+<input type = "button" id = "submit" value = "login" onclick = "myfunction()">
+<p> Have'nt signed up, sign up here </p>
+<a href = " reg.html"> SIGN UP </a>
+</form>
+</body>
+</html>
